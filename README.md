@@ -1,5 +1,7 @@
 # Automated Machine Learning (AutoML)
 
+[Read the project report (PDF)](docs/PROJECT_REPORT.pdf) · [Explore the explanation and flow diagram](docs/PROJECT_REPORT.md)
+
 This is the main branch of AutoML repository.
 
 ---
@@ -69,5 +71,9 @@ AutoML makes building, training, and optimizing machine learning models easy by 
 
 4. Run the Streamlit web application:
     ```
-    streamlit run Code/app.py
+    streamlit run app.py
     ```
+
+## Reading the output
+
+The current interface labels `model.score` as percentage accuracy. Regression returns R-squared; classifier accuracy is a fraction unless multiplied by 100. Treat the displayed label carefully. The project report explains the implemented estimators and the limits of the current evaluation.
